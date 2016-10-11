@@ -1,9 +1,7 @@
 <?php
 
 Route::get('/', function () {
-	$folder = 'hello/';
-	echo rtrim($folder, '/').'/'.date("Y_m_d_His");
-    // return view('welcome');
+    return view('welcome');
 });
 
 Route::resource('crawlers', 'CrawlerController');

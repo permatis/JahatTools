@@ -103,6 +103,8 @@ class CrawlerController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->crawler->destroy($id);
+
+        return redirect('crawlers');
     }
 }

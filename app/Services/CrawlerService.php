@@ -29,6 +29,7 @@ class CrawlerService
 
 	public function run($data)
 	{
+		$array = [];
 		$crawler = $this->client->request('GET', $data->url);
 		$parent = $this->parent($crawler, $data->parent_class);
 		$childs = $this->child( json_decode($data->child_class, true) );

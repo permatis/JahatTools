@@ -32,6 +32,11 @@
 					@else 
 					<a href="/products/crawler/{{ $crawler->id }}">Show Products</a>
 					@endif
+					<form action="/crawlers/{{ $crawler->id }}" method="POST">
+						{{ csrf_field() }}
+						<input type="hidden" name="_method" value="DELETE">
+						<button type="submit">Delete</button>
+					</form>
 				</td>
 			</tr>
 			@endforeach

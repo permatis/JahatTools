@@ -4,7 +4,7 @@
 		<li><a href="/crawlers">Crawler Lists</a></li>
 		<li><a href="/crawlers/create">Add Crawler</a></li>
 	</ul>
-	<h2>Crawler Lists</h2>
+	<h2>Product Lists</h2>
 	<table>
 		<thead>
 			<tr>

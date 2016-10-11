@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Let's Try</a>
+                    <a href="/crawlers">Let's Try</a>
                 </div>
             </div>
         </div>

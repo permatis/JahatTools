@@ -25,7 +25,7 @@ class ImageService
 		if(!file_exists($folder)) {
 			$folder = rtrim($folder.'/'.date("Y_m_d_His"), '/').'/';
         	mkdir( $folder, 0777, true );
-        	chmod( $folder, 0755 );
+        	chmod( $folder, 0777 );
     	}
 
     	return $folder;

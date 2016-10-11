@@ -21,7 +21,8 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->timestamps();
             $table->integer('crawler_id')->unsigned();
-            $table->foreign('crawler_id')->references('id')->on('crawlers');
+            $table->foreign('crawler_id')->references('id')->on('crawlers')
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
